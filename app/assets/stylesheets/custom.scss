@@ -168,7 +168,7 @@ body {
 
 footer {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   width: 100vw;
   min-height: 50px;
   padding: 3px 0;
@@ -378,6 +378,10 @@ header {
   bottom: 130px;
 }
 
+form {
+  padding-left: 10px;
+}
+
 .form-wrap {
   width: 42%;
   padding: 30px 0;
@@ -423,7 +427,7 @@ header {
     width: 200px;
     display: block;
     border-radius: 5px;
-    margin: auto;
+    margin: 30px auto;
   }
 }
 
@@ -548,7 +552,7 @@ header {
 
 @media only screen and (max-width: 800px) {
   body {
-    min-height: 80vh;
+    min-height: 100vh;
     width: 101vw;
     padding-bottom: 30px;
   }
@@ -567,12 +571,13 @@ header {
     }
   }
   .reg {
-    width: 96%;
+    width: 80%;
   }
   .aside-reg {
     left: 90px;
   }
   .form-wrap {
+    width: 50%;
     margin-top: 0;
     h1 {
       &::after {
@@ -598,6 +603,9 @@ header {
 }
 
 @media only screen and (max-width: 430px) {
+  body {
+    min-height: 101.5vh;
+  }
   #logo {
     margin: 0;
     padding: 0;
@@ -606,12 +614,14 @@ header {
   .navbar-custom {
     height: calc(max-content + 30px);
     justify-content: flex-end;
+    padding-right: 15px;
     .navbar-child {
       width: 68%;
       padding: 0;
       justify-content: space-around;
       li {
         width: max-content;
+        display: inline-flex;
         a {
           font-size: 14px;
         }
@@ -672,7 +682,7 @@ header {
 
 @media (max-width: 330px) {
   body {
-    min-height: 96vh;
+    min-height: 101.5vh;
   }
   #logo {
     margin-top: 5px;
@@ -689,9 +699,8 @@ header {
     }
   }
   .form-wrap {
-    margin-left: 30px;
     min-width: initial;
-    width: 100%;
+    width: 90%;
     h1 {
       font-weight: 600;
       font-size: 18px;
